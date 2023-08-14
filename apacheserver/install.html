@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt upate -y 
+apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo su -
+cd /var/www/html
+echo "<h1>Welcome to Git Lab Training with Jerry Bame</h1>" > index.html 
+
+
